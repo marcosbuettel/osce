@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/osce/static/js/main.c2ead2f0.js",
+    "static/js/453.484c0c25.chunk.js": "/osce/static/js/453.484c0c25.chunk.js",
+    "index.html": "/osce/index.html",
+    "main.c2ead2f0.js.map": "/osce/static/js/main.c2ead2f0.js.map",
+    "453.484c0c25.chunk.js.map": "/osce/static/js/453.484c0c25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c2ead2f0.js"
+  ]
+}
