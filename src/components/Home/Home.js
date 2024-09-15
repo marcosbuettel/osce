@@ -3,6 +3,17 @@ import Input from '../Input/Input';
 import { useState } from 'react';
 import Round from '../Round/Round';
 import logo from '../../assets/logo.png';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+
+  @media (max-width: 1068px) {
+    flex-direction: column;
+  }
+`;
 
 const Home = () => {
   const [inputValue, setInputValue] = useState({});
@@ -39,7 +50,7 @@ const Home = () => {
         <img src={logo} alt="Logo" style={{ width: '200px', height: '20px' }} />
         <p>PROVA OSCE</p>
       </div>
-      <div style={{ display: 'flex', padding: '10px', marginTop: '20px' }}>
+      <Container>
         <Input
           label="Alunos"
           inputName="alunos"
@@ -58,7 +69,7 @@ const Home = () => {
           handleChange={handleChange}
           value={inputValue['espelhamento']}
         />
-      </div>
+      </Container>
       <div style={{ display: 'flex', padding: '10px' }}>
         <Button
           buttonTitle={'Gerar'}
