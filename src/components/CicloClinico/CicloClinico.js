@@ -3,6 +3,7 @@ import Input from '../Input/Input';
 import { useState } from 'react';
 import Round from '../Round/Round';
 import styled from 'styled-components';
+import RoundCicloClinico from '../RoundCicloClinico/RoundCicloClinico';
 
 const Container = styled.div`
   display: flex;
@@ -14,7 +15,7 @@ const Container = styled.div`
   }
 `;
 
-const Home = () => {
+const CicloClinico = () => {
   const [inputValue, setInputValue] = useState({});
   const [showRound, setShowRound] = useState(false);
 
@@ -35,7 +36,7 @@ const Home = () => {
 
   return (
     <div>
-      <h2 style={{ marginLeft: '5px' }}>INTERNATO</h2>
+      <h2 style={{ marginLeft: '5px' }}>CICLO CLÍNICO</h2>
       <Container>
         <Input
           label="Alunos"
@@ -70,11 +71,11 @@ const Home = () => {
       </div>
       <div>
         {Array.from({ length: inputValue['espelhamento'] || 1 }).map(() => (
-          <Round value={inputValue} showRound={showRound} />
+          <RoundCicloClinico value={inputValue} showRound={showRound} />
         ))}
       </div>
     </div>
   );
 };
 
-export default Home;
+export default CicloClinico;
